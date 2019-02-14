@@ -548,7 +548,19 @@ button {
   color: white;
   border: 0; }
 
-.hero-img {
-  width: 100vw; }
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 56vw;
+  background-image: url("../img/speaker.jpg");
+  background-size: 100vw 56vw;
+  justify-content: flex-end; }
+
+.floater {
+  display: flex;
+  height: 350px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 60px; }
 
 /*# sourceMappingURL=output.css.map */
