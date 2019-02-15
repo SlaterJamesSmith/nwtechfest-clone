@@ -35,6 +35,19 @@
   'themes/default';
 
 // variables
+$maxImg: 400px;
+$largeImg: 21vw;
+$mediumImg: 30vw;
+$smallImg: 45vw;
+$smallestImg: 80vw;
+
+$fullScreen: 1900px;
+$lapScreen: 1500px;
+$tabScreen: 1000px;
+$phoneScreen: 600px;
+
+
+
 $ylwBtn:#ffcb07;
 
 
@@ -130,4 +143,160 @@ button {
   // margin-left: auto;
   margin: 60px;
 
+}
+
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.rainbow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.blockchain {
+  background-color: #ef3f68;
+  height: 220px;
+  width: 25vw;
+}
+
+.smart-cities {
+  background-color: #e0e31c;
+  height: 220px;
+  width: 25vw;
+}
+
+.health {
+  background-color: #48b4c4;
+  height: 220px;
+  width: 25vw;
+}
+
+.future {
+  background-color: #1aa477;
+  height: 220px;
+  width: 25vw;
+}
+
+.what {
+  height: 283px;
+  width: 50vw;
+  border-bottom: 1px solid #4d4d4d;
+  border-right: 1px solid #4d4d4d;
+  background-color: #0a0a0a;
+}
+
+.old {
+  height: 283px;
+  width: 50vw;
+  border-bottom: 1px solid #4d4d4d;
+  background-color: #241f20;
+}
+
+.footer {
+  height: 300px;
+  background-color: black;
+}
+
+@media screen and (max-width:$tabScreen) and (min-width:$phoneScreen) {
+
+  .menue_buttons {
+    display: none;
+  }
+
+
+  .blockchain {
+    width: 50vw;
+  }
+
+  .smart-cities {
+    width: 50vw;
+  }
+
+  .health {
+    width: 50vw;
+  }
+
+  .future {
+    width: 50vw;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .what {
+    width: 100vw;
+    border-right: 0;
+  }
+
+  .old {
+    height: 283px;
+    width: 100vw;
+  }
+
+
+}
+
+@media screen and (max-width:$phoneScreen) {
+
+  .floater {
+    display: flex;
+    height: 245px;
+    width: 100vw;
+    // padding: 30px;
+    background-color: transparentize(black, .5);
+    margin: 0;
+
+  }
+
+  .menue_buttons {
+    display: none;
+  }
+
+  .rainbow {
+    flex-direction: column;
+  }
+
+  .blockchain {
+    width: 100vw;
+    height: 180px;
+  }
+
+  .smart-cities {
+    width: 100vw;
+    height: 180px;
+  }
+
+  .health {
+    width: 100vw;
+    height: 180px;
+  }
+
+  .future {
+    width: 100vw;
+    height: 180px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .what {
+    width: 100vw;
+    height: 252px;
+    border-right: 0;
+  }
+
+  .old {
+    width: 100vw;
+    height: 252px;
+  }
+
+  .footer {
+    height: 360px;
+  }
 }
